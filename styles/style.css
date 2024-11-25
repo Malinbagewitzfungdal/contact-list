@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #719568;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Gör att allt i #center centreras horisontellt */
+    width: 90%;
+    max-width: 500px;
+    background: #bbdbb6;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.4, 0.4);
+    border-radius: 10px;
+
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#add-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centrerar alla input-fält och knappar horisontellt */
+    width: 100%;
+}
+
+input {
+    width: 80%;  /* Gör inputfälten bredden 80% av föräldern */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+#add-btn {
+    background-color: #429850;
+
+    color: #0c371a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 80%;  /* Gör knappen lika bred som input-fältet */
+    margin-bottom: 10px;  /* Lägger till lite mellanrum mellan knappen och nästa element */
+}
+
+#add-btn:hover {
+    background-color: #24aa41;
+}
+
+#clear-list-btn {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 35%;
+    font-size: 14px;
+}
+
+#clear-list-btn:hover {
+    background-color: #c82333;  /* Mörkare röd vid hover */
+}
+
+#contact-list {
+    margin-top: 20px;
+}
+
+.contact {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    margin-bottom: 1px;
+}

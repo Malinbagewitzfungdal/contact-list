@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktlista</title>
-</head>
-<body>
-    <h1>Kontaktlista</h1>
-    <section id="add-contact">
-        <h2>Skapa ny kontakt</h2>
-        <label for="name">Namn:</label>
-        <input type="text" id="name" placeholder="Ange namn">
-        
-        <label for="phone">Telefonnummer:</label>
-        <input type="text" id="phone" placeholder="Ange telefonnummer">
-        
-        <button id="add-btn">Skapa kontakt</button>
-    </section>
+    <link rel="stylesheet" href="styles/style.css">
 
-    <section id="contact-list">
-        <h2>Dina kontakter</h2>
-        <ul id="contacts">
-    
+</head>
+
+<body>
+    <div id="center">
+        <div id="form">
+            <h1>Kontaktlista</h1>
+            <section id="add-contact">
+                <h2>Skapa ny kontakt</h2>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Ange namn">
+                <span id="name-error" class="error"></span>
+
+                <label for="phone"></label>
+                <input type="text" id="phone" placeholder="Ange telefonnummer">
+                <span id="phone-error" class="error"></span>
+
+                <button id="add-btn">Skapa kontakt</button>
+                
+            </section>
+        </div>
+
+        <section id="contact-list">
+            <h2>Dina kontakter</h2>
+            <ul id="contacts"></ul>
+        </section>
+
+            <button id="clear-list-btn">Radera hela listan</button>
+        
+    </div>
     <script src="script.js"></script>
 </body>
+
+</html>
