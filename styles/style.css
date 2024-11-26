@@ -12,12 +12,12 @@ body {
 #center {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Gör att allt i #center centreras horisontellt */
+    align-items: center;  
     width: 90%;
     max-width: 500px;
     background: #bbdbb6;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.4, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.422);
     border-radius: 10px;
 
 }
@@ -30,12 +30,12 @@ h1, h2 {
 #add-contact {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centrerar alla input-fält och knappar horisontellt */
+    align-items: center;
     width: 100%;
 }
 
 input {
-    width: 80%;  /* Gör inputfälten bredden 80% av föräldern */
+    width: 80%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -59,8 +59,8 @@ input {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    width: 80%;  /* Gör knappen lika bred som input-fältet */
-    margin-bottom: 10px;  /* Lägger till lite mellanrum mellan knappen och nästa element */
+    width: 80%;
+    margin-bottom: 10px;
 }
 
 #add-btn:hover {
@@ -78,19 +78,65 @@ input {
 }
 
 #clear-list-btn:hover {
-    background-color: #c82333;  /* Mörkare röd vid hover */
+    background-color: #c82333; 
 }
 
 #contact-list {
+    justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact {
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
+    display: flex;s
 }
 
 .contact input {
     margin-bottom: 1px;
+}
+
+
+.edit-btn {
+    background-color: #429850; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.edit-btn:hover {
+    background-color: #24aa41; 
+}
+
+
+.delete-btn {
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    
+}
+
+.delete-btn:hover {
+    background-color: #c82333; 
+}
+
+
+.edit-btn.saving {
+    background-color: #28a745; 
+    color: white;
+}
+
+.edit-btn.saving:hover {
+    background-color: #218838;
+}
+
+ul {
+    padding-inline-start: 0;
 }
